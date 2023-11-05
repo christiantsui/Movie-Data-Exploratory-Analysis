@@ -2,14 +2,11 @@
 
 #### Flatiron School Data Science Program - Project 1
 #### By: Christian Tsui
+#### Oct, 2023
 
 ## Background
 
-This project analyzes movie data to generate actionable insights for Microsoft's new venture into the movie production space. 
-
-### Business Problem
-
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+This project analyzes movie data to generate actionable insights for Microsoft's new venture into the movie production space. This is achieved by exploring the landscape of studios, successful movie genres, and details of those movies.
 
 ### The Data
 
@@ -21,32 +18,31 @@ In the folder `zippedData` are movie datasets from:
 * [TheMovieDB](https://www.themoviedb.org/)
 * [The Numbers](https://www.the-numbers.com/)
 
-Because it was collected from various locations, the different files have different formats. Some are compressed CSV (comma-separated values) or TSV (tab-separated values) files that can be opened using spreadsheet software or `pd.read_csv`, while the data from IMDB is located in a SQLite database.
+### Three Deliverables:
+1. [GitHub repository](https://github.com/christiantsui/Movie-Data-Exploratory-Analysis)
+2. [Jupyter Notebook](student.ipynb)
+3. [Non-technical presentation]()
 
-![movie data erd](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project-v2-4/master/movie_data_erd.jpeg)
+# Exploration Questions
 
-Note that the above diagram shows ONLY the IMDB data. You will need to look carefully at the features to figure out how the IMDB data relates to the other provided data files.
+## 1. Which Movie Genres are Most Successful?
+This question investigates which movie genres are most successful, through different measures of "success" beyond gross revenue. Academy Award nominations are widely accepted as a reliable measure of a film's quality, so we decided to include Oscar Nomination data in the analysis.
+If the data suggests that certain movie genres tend to receive more nominations or generate a higher gross revenue, "Microsoft" should invest more in producing films of those genres.
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind, we recommend you use only the following data files:
+ 
+### Hypothesis
+- Family and Action movies are most successful in the Box Office
+- Drama movies get more Oscar nominations
 
-* `im.db.zip`
-  * Zipped SQLite database (you will need to unzip then query using SQLite)
-  * `movie_basics` and `movie_ratings` tables are most relevant
-* `bom.movie_gross.csv.gz`
-  * Compressed CSV file (you can open without expanding the file using `pd.read_csv`)
 
-### Key Points
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+## 2. How Does a Movie Trailer Impact Box Office Success?
+This question explores the relationship between movie budget, and Box Office success. A portion of movie budget is spent on marketing efforts, such as the movie trailer. If there is a relationship between movie trailer popularity and Box Office success, this could indicate that marketing efforts (such as movie trailers) have a significant impact on revenue, and that "Microsoft" should place a higher importance on investing resources into movie trailers for their future movies.
+### Hypothesis
+- movies with higher production budgets tend to have a higher return-on-investment
+- movies with highly-viewed trailers tend to be more successful in the box office
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
-
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
-
-## Deliverables
-
-There are three deliverables for this project:
-
-* A **non-technical presentation**
-* A **Jupyter Notebook**
-* A **GitHub repository**
+## 3. How Does Movie Soundtrack Relate to Box Office Success?
+This question explores the relationship between movie soundtrack ratings and online ratings/Box Office success of a movie. If there is a relationship between soundtrack rating and movie success, this suggests that a good soundtrack is common among successful movies, and Microsoft should invest resources into music score production for their movies.
+### Hypothesis
+- movies with highly-rated music scores tend to be more successful in the box office
