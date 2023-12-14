@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 *.db
 ./zippedData/im.db
+./Flatiron_Project_1.pptx
