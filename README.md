@@ -21,28 +21,25 @@ In the folder `zippedData` are movie datasets from:
 ### Three Deliverables:
 1. [GitHub repository](https://github.com/christiantsui/Movie-Data-Exploratory-Analysis)
 2. [Jupyter Notebook](student.ipynb)
-3. [Non-technical presentation]()
+3. [Non-technical presentation](Flatiron_Project_1.pdf)
 
 # Exploration Questions
 
-## 1. Which Movie Genres are Most Successful?
-This question investigates which movie genres are most successful, through different measures of "success" beyond gross revenue. Academy Award nominations are widely accepted as a reliable measure of a film's quality, so we decided to include Oscar Nomination data in the analysis.
-If the data suggests that certain movie genres tend to receive more nominations or generate a higher gross revenue, "Microsoft" should invest more in producing films of those genres.
-
+## 1. Who are Microsoft's Competitors and What is the Production Budget of their Movies?
+This question investigates Microsoft's competitors in the movie production space. The purpose of this question is to get an idea of the competitive landscape, and production budget of other successful companies. This serves as a benchmark and initial starting point for Microsoft's movie strategy.
  
 ### Hypothesis
-- Family and Action movies are most successful in the Box Office
-- Drama movies get more Oscar nominations
+- Companies that have a higher production budget tend to have more monetary success in the box office
 
 
+## 2. What Genre of Movies are Most Successful in the Box Office?
+This question explores the relationship between genre, and Box Office success. If there is an indication that certain genres tend to perform better in the box office, Microsoft should allocate their resources to developing movies within that space.
 
-## 2. How Does a Movie Trailer Impact Box Office Success?
-This question explores the relationship between movie budget, and Box Office success. A portion of movie budget is spent on marketing efforts, such as the movie trailer. If there is a relationship between movie trailer popularity and Box Office success, this could indicate that marketing efforts (such as movie trailers) have a significant impact on revenue, and that "Microsoft" should place a higher importance on investing resources into movie trailers for their future movies.
 ### Hypothesis
-- movies with higher production budgets tend to have a higher return-on-investment
-- movies with highly-viewed trailers tend to be more successful in the box office
+- Action and Adventure movies tend to perform better in the box office
 
-## 3. How Does Movie Soundtrack Relate to Box Office Success?
-This question explores the relationship between movie soundtrack ratings and online ratings/Box Office success of a movie. If there is a relationship between soundtrack rating and movie success, this suggests that a good soundtrack is common among successful movies, and Microsoft should invest resources into music score production for their movies.
+## 3. What are the Metrics Associated with the Best Performing Genres?
+This question explores the metrics behinf the best performing genres. If there are certain metrics of those genres that are associated with the best performing movies, then Microsoft should aim to satisfy those metrics.
+
 ### Hypothesis
-- movies with highly-rated music scores tend to be more successful in the box office
+- movies that are longer in runtime perform worse
